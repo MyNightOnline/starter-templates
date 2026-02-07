@@ -53,7 +53,7 @@ Update `src/main.tsx` to set up the RouterProvider:
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import { RouterProvider } from "react-router-dom";
+import { RouterProvider } from "react-router";
 import router from './router';
 
 createRoot(document.getElementById('root')!).render(
@@ -67,7 +67,7 @@ createRoot(document.getElementById('root')!).render(
 Create a new file `src/router/index.tsx` with the following content:
 
 ```tsx
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from "react-router";
 
 const router = createBrowserRouter([
   {
